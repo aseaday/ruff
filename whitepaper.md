@@ -1,4 +1,4 @@
-# Ruff 物联网公有链白皮书[^1]
+# Ruff 物联网公有链白皮书 [^1]
 
 Working Draft, October 2017, Rev. 0.7.1
 
@@ -142,19 +142,19 @@ TX:Return 被主链确认后合同执行成功，用户的 Token 会被真正的
 
 物联网的节点往往是非常小的运算单元，由于对体积功耗往往都有要求，它们的算力很低，内存很小，MCU 不会超过 512kb, Linux 版本的节点也就是路由器的级别，存储也很小，MCU 的只有 1M 的 Flash， 这样的节点参与共识是非常困难的。 所以物联网的结构一定是由多个节点组成一个网络，这个网络里会有一个或是多个应用，应用通过应用接口和链发生交互，而本地应用所需的计算能力来自边缘计算单元，可以是网关或是路由器。应用可以使用中心化或是去中心化的方式管理局部网络，并和链发生交互。根据这个特点，我们把 Ruff 生态里的节点按下图进行分类：
 
-###轻节点（执行者）
+### 轻节点（执行者）
 
  应用控制物的接口，请求网络获取认证信息，核对正确后执行合约给使用者，比如释放物权。 轻节点可由无存储能力的简单设备承担，成本可低至几美金。 
 
-###全节点（记录者）
+### 全节点（记录者）
 
  记载全部的信息，参与事件登记或是更改的广播，可将票投给其他节点。 并能成为代表节点。由网络里性能较强的设备扮演。由于未使用 PoW 的共识算法，对全节点的算力要求较低，200 美金的 HTPC，高度路由器，NAS 等家用智能设备均可扮演。
 
-###代表节点（仲裁着）
+### 代表节点（仲裁着）
 
  全节点中得票最多的 105 个节点，投票节点要承担坚守规则，打包区块的职责，一旦被发现有恶意行为则会被投票者抛弃，失去代表资格。代表节点可以通过出块获得挖矿收入。
 
-###控制节点（SPV钱包）
+### 控制节点（SPV钱包）
 
  有一定的计算能力，能保存所有的区块的头部快速验证一个指定的交易是否上链，能使用 P2P 协议安全的发起一个交易。相对于全节点，不用 24 小时保存在线。一般由智能手机上的 App，或则没有足够存储空间的家用智能设备扮演（比如低端路由器，智能家居的网桥等设备）
 
@@ -274,6 +274,7 @@ Ruff 将是一个基于物联网的全新底层构架平台，有去中心化、
 
 
 [^1]: THIS DOCUMENT AND ANY OTHER DOCUMENTS PUBLISHED IN ASSOCIATION WITH THIS WHITE PAPER RELATE TO A POTENTIAL TOKEN OFFERING TO PERSONS (CONTRIBUTORS) IN RESPECT OF THE INTENDED DEVELOPMENT AND USE OF THE NETWORK BY VARIOUS PARTICIPANTS. THIS DOCUMENT DOES NOT CONSTITUTE AN OFFER OF SECURITIES OR A PROMOTION, INVITATION OR SOLICITATION FOR INVESTMENT PURPOSES. THE TERMS OF THE CONTRIBUTION ARE NOT INTENDED TO BE A FINANCIAL SERVICES OFFERING DOCUMENT OR A PROSPECTUS. THE TOKEN OFFERING INVOLVES AND RELATES TO THE DEVELOPMENT AND USE OF EXPERIMENTAL SOFTWARE AND TECHNOLOGIES THAT MAY NOT COME TO FRUITION OR ACHIEVE THE OBJECTIVES SPECIFIED IN THIS WHITE PAPER. THE PURCHASE OF TOKENSREPRESENTS A HIGH RISK TO ANY CONTRIBUTORS. TOKENS DO NOT REPRESENT EQUITY, SHARES, UNITS, ROYALTIES OR RIGHTS TO CAPITAL, PROFIT OR INCOME IN THE NETWORK OR SOFTWARE OR IN THE ENTITY THAT ISSUES TOKENS OR ANY OTHER COMPANY OR INTELLECTUAL PROPERTY ASSOCIATED WITH THE NETWORK OR ANY OTHER PUBLIC OR PRIVATE ENTERPRISE, CORPORATION, FOUNDATION OR OTHER ENTITY IN ANY JURISDICTION. THE TOKEN IS NOT THEREFORE INTENDED TO REPRESENT A SECURITY INTEREST.
+
 [^2]: McKinsey Research
 
 [^3]: McKinsey Research
